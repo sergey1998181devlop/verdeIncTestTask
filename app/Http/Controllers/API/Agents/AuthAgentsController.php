@@ -18,13 +18,13 @@ class AuthAgentsController extends Controller
     }
     /**
      * @OA\Post(
-     *     path="/api/auth/contact/register",
+     *     path="/api/auth/agents/register",
      *     operationId="registerAgents",
      *     tags={"Agents"},
-     *     summary="Register for contact",
+     *     summary="Register for agents",
      *     @OA\Parameter(
      *         name="name",
-     *         description="description login contact",
+     *         description="description login agents",
      *         example="testLogin",
      *         required=true,
      *         in="path",
@@ -34,7 +34,7 @@ class AuthAgentsController extends Controller
      *     ),
      *     @OA\Parameter(
      *         name="surname",
-     *         description="description surname contact",
+     *         description="description surname agents",
      *         example="testSurname",
      *         required=true,
      *         in="path",
@@ -44,7 +44,7 @@ class AuthAgentsController extends Controller
      *     ),
      *     @OA\Parameter(
      *         name="birthdate",
-     *         description="description age contact",
+     *         description="description age agents",
      *         example="18/07/1998",
      *         required=false,
      *         in="path",
@@ -54,7 +54,7 @@ class AuthAgentsController extends Controller
      *     ),
      *     @OA\Parameter(
      *         name="email",
-     *         description="description email contact",
+     *         description="description email agents",
      *         example="testEmail@gmail.com",
      *         required=true,
      *         in="path",
@@ -65,7 +65,7 @@ class AuthAgentsController extends Controller
      *     @OA\Parameter(
      *         name="password",
      *         example="testPassword",
-     *         description="description password contact",
+     *         description="description password agents",
      *         required=true,
      *         in="path",
      *         @OA\Schema(
@@ -101,13 +101,13 @@ class AuthAgentsController extends Controller
     }
     /**
      * @OA\Post(
-     *     path="/api/auth/contact/login",
+     *     path="/api/auth/agents/login",
      *     operationId="loginAgents",
      *     tags={"Agents"},
      *     summary="Register for contact",
      *     @OA\Parameter(
      *         name="email",
-     *         description="description email contact",
+     *         description="description email agents",
      *         example="testEmail@gmail.com",
      *         required=true,
      *         in="path",
@@ -118,7 +118,7 @@ class AuthAgentsController extends Controller
      *     @OA\Parameter(
      *         name="password",
      *         example="testPassword",
-     *         description="description password contact",
+     *         description="description password agents",
      *         required=true,
      *         in="path",
      *         @OA\Schema(

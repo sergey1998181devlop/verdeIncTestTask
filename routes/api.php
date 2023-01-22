@@ -19,7 +19,7 @@ use App\Http\Controllers\API\Agents\AuthAgentsController;
 //});
 Route::group([
     'middleware' => 'api',
-    'prefix' => 'auth/contact'
+    'prefix' => 'auth/agents'
 ], function ($router) {
     Route::controller(AuthAgentsController::class)->group(function(){
         Route::post('/register', 'register');
