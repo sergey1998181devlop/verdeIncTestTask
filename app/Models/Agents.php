@@ -10,11 +10,11 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class Contacts extends Authenticatable  implements JWTSubject
+class Agents extends Authenticatable  implements JWTSubject
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected string $guard = 'contacts';
+    protected string $guard = 'agents';
     /**
      * The attributes that are mass assignable.
      *

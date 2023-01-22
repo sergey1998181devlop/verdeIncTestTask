@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class ContactsServiceProvider extends ServiceProvider
+class AgentsServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -14,8 +14,8 @@ class ContactsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            \App\Services\Contracts\ContactsAuthServiceInterface::class,
-            \App\Services\ContactsService::class
+            \App\Services\Contracts\AgentsAuthServiceInterface::class,
+            \App\Services\AgentsService::class
         );
     }
 

@@ -1,26 +1,26 @@
 <?php
-namespace App\Http\Controllers\API\Contacts;
+namespace App\Http\Controllers\API\Agents;
 
-use App\Http\Requests\API\Auth\ContactLoginRequest;
-use App\Http\Requests\API\Auth\ContactRegisterRequest;
+use App\Http\Requests\API\Auth\AgentsLoginRequest;
+use App\Http\Requests\API\Auth\AgentsRegisterRequest;
 use Auth;
 use App\Http\Controllers\Controller as Controller;
-use App\Services\Contracts\ContactsAuthServiceInterface;
+use App\Services\Contracts\AgentsAuthServiceInterface;
 
-class AuthContactsController extends Controller
+class AuthAgentsController extends Controller
 {
 
-    private ContactsAuthServiceInterface $ContactsService;
+    private AgentsAuthServiceInterface $AgentsService;
 
-    public function __construct(ContactsAuthServiceInterface $ContactsService)
+    public function __construct(AgentsAuthServiceInterface $AgentsService)
     {
-        $this->ContactsService = $ContactsService;
+        $this->AgentsService = $AgentsService;
     }
     /**
      * @OA\Post(
      *     path="/api/auth/contact/register",
-     *     operationId="registerContact",
-     *     tags={"Contacts"},
+     *     operationId="registerAgents",
+     *     tags={"Agents"},
      *     summary="Register for contact",
      *     @OA\Parameter(
      *         name="name",
@@ -96,14 +96,14 @@ class AuthContactsController extends Controller
      *     )
      * )
      */
-    public function register(ContactRegisterRequest $request){
-        return $this->ContactsService->register($request);
+    public function register(AgentsRegisterRequest $request){
+        return $this->AgentsService->register($request);
     }
     /**
      * @OA\Post(
      *     path="/api/auth/contact/login",
-     *     operationId="loginContact",
-     *     tags={"Contacts"},
+     *     operationId="loginAgents",
+     *     tags={"Agents"},
      *     summary="Register for contact",
      *     @OA\Parameter(
      *         name="email",
@@ -149,9 +149,9 @@ class AuthContactsController extends Controller
      *     )
      * )
      */
-    public function login(ContactLoginRequest $request)
+    public function login(AgentsLoginRequest $request)
     {
-        return $this->ContactsService->login($request);
+        return $this->AgentsService->login($request);
     }
     public function me()
     {

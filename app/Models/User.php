@@ -65,8 +65,8 @@ class User extends Authenticatable implements JWTSubject
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function contacts(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    public function agents(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->belongsToMany(Contacts::class);
+        return $this->belongsToMany(Agents::class);
     }
 }

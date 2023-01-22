@@ -15,10 +15,10 @@
         "/api/auth/contact/register": {
             "post": {
                 "tags": [
-                    "Contacts"
+                    "Agents"
                 ],
                 "summary": "Register for contact",
-                "operationId": "registerContact",
+                "operationId": "registerAgents",
                 "parameters": [
                     {
                         "name": "name",

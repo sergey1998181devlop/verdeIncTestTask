@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('contact_id');
             $table->unsignedBigInteger('user_id');
 
-            $table->foreign('contact_id')->references('id')->on('contacts');
+            $table->foreign('contact_id')->references('id')->on('agents');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
