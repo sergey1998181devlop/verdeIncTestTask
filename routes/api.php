@@ -14,31 +14,23 @@ use App\Http\Controllers\API\Agents\AuthAgentsController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-//Route::controller(AuthAgentsController::class)->group(function(){
-//    Route::post('dashboard/login', 'login');
-//});
+
 Route::group([
-    'middleware' => 'api',
-    'prefix' => 'auth/agents'
-], function ($router) {
+    'prefix' => 'auth/agents',
+], function () {
     Route::controller(AuthAgentsController::class)->group(function(){
         Route::post('/register', 'register');
         Route::post('/login', 'login');
-        Route::post('/logout', 'logout');
-        Route::post('/token', 'token');
-        Route::post('/me', 'me');
-        Route::post('/tokenid', 'tokenId');
     });
 });
-//Route::middleware('auth:agents')->group(function(){
-//    Route::get('auth/register', 'AuthAgentsController@register');
-//    Route::get('auth/login', 'AuthAgentsController@login');
-//    Route::get('auth/logout', 'AuthAgentsController@logout');
-//    Route::get('auth/token', 'AuthAgentsController@token');
-//    Route::get('auth/me', 'AuthAgentsController@me');
-//    Route::get('auth/tokenid', 'AuthAgentsController@tokenId');
-//});
-//Route::namespace('Admin')->name('admin.')->prefix('admin')->group(function () {
-//    Route::get('login', 'AdminAuthController@getLogin')->name('login');
-//    Route::post('login', 'AdminAuthController@postLogin');
-//});
+
+Route::group(['middleware' => ['jwt.verify']], function() {
+    Route::group([
+        'prefix' => 'auth/agents',
+    ], function () {
+        Route::controller(AuthAgentsController::class)->group(function(){
+            Route::post('/profile', 'agentProfile');
+            Route::post('/logout', 'logout');
+        });
+    });
+});

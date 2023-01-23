@@ -13,4 +13,6 @@ interface AgentsAuthServiceInterface
     public function index($token);
 
     public function login(AgentsLoginRequest $request);
+
+    public function agentProfile();
 }

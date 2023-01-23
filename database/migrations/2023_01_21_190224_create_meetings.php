@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('meetings', function (Blueprint $table) {
             $table->id();
+            $table->timestamp('meeting_data_time');
+            $table->string('meeting_place');
             $table->unsignedBigInteger('contact_id');
             $table->unsignedBigInteger('user_id');
 

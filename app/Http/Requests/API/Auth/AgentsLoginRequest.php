@@ -31,24 +31,10 @@ class AgentsLoginRequest extends FormRequest
             'password' => ['required','string','min:6']
         ];
     }
-
-    public function validationData()
+    public function messages()
     {
-        try {
-            $this->merge([
-                'phone' => str_replace(array('(', ')', ' ', '-', '+'), '', $this->phone)]);
-            if (iconv_strlen($this->phone) === 10 and $this->phone[0] === 9) {
-                return parent::validationData();
-            }
-            if (iconv_strlen($this->phone) < 10) {
-                throw new Exception("Неверный формат номера" , 401);
-            } else {
-                $this->merge([
-                    'phone' => substr($this->phone, iconv_strlen($this->phone) - 10)]);
-                return parent::validationData();
-            }
-        }catch (\Exception $exception) {
-            throw new Exception("Ошибка валидации номера" , 401);
-        }
+        return [
+            'password.min' => 'minimum length  :attribute !',
+        ];
     }
 }

@@ -7,6 +7,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Hash;
 use Laravel\Sanctum\HasApiTokens;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
@@ -35,6 +36,7 @@ class Agents extends Authenticatable  implements JWTSubject
      * @var array<int, string>
      */
     protected $hidden = [
+        'id',
         'password',
         'remember_token',
     ];
@@ -56,9 +58,18 @@ class Agents extends Authenticatable  implements JWTSubject
     public static function index($token) {
         return CdpUsers::where('token' , $token)->first();
     }
+    /**
+     * Set hash for password
+     *
+     * @param  string  $value
+     * @return void
+     */
+    public function setPasswordAttribute($value) {
+        $this->attributes['password'] = Hash::make($value);
+    }
 
     /**
-     * Set the user's first name.
+     * Set the format date  for date_of_birth agent.
      *
      * @param  string  $value
      * @return void

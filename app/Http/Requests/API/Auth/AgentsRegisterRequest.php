@@ -29,6 +29,7 @@ class AgentsRegisterRequest extends FormRequest
         return [
             'name' => ['required','string','min:3','max:30'],
             'email' => ['required','email','string','max:55'],
+            'password' => ['required','string','min:6'],
             'birthdate' => ['date_format:d/m/Y'],
         ];
     }
@@ -39,6 +40,7 @@ class AgentsRegisterRequest extends FormRequest
     {
         return [
             'birthdate.date_format' => 'Invalid date of :attribute format',
+            'password.min' => 'minimum length  :attribute !',
         ];
     }
 }
