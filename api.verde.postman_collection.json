@@ -1,0 +1,465 @@
+{
+	"info": {
+		"_postman_id": "cf399552-5e2d-4672-b207-d8b4a8db706a",
+		"name": "api.verde",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21244421"
+	},
+	"item": [
+		{
+			"name": "Contacts",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.tashir.solvintech.ru/api/register?name=sergey&email=nazarkin2017@mail.ru&surname=nazar&birthdate=1998-12-07&sex=male&agreement_personal=1&agreement_communication=1&agreement_loyalty=1&phone=+7(977)594-72-13",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tashir",
+										"solvintech",
+										"ru"
+									],
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sergey"
+										},
+										{
+											"key": "email",
+											"value": "nazarkin2017@mail.ru"
+										},
+										{
+											"key": "surname",
+											"value": "nazar"
+										},
+										{
+											"key": "birthdate",
+											"value": "1998-12-07"
+										},
+										{
+											"key": "sex",
+											"value": "male"
+										},
+										{
+											"key": "agreement_personal",
+											"value": "1"
+										},
+										{
+											"key": "agreement_communication",
+											"value": "1"
+										},
+										{
+											"key": "agreement_loyalty",
+											"value": "1"
+										},
+										{
+											"key": "phone",
+											"value": "+7(977)594-72-13"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.tashir.solvintech.ru/api/register?name=sergey&email=nazarkin2017@mail.ru&surname=nazar&birthdate=1998-12-07&sex=male&agreement_personal=1&agreement_communication=1&agreement_loyalty=1&phone=+7(977)594-72-13",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tashir",
+										"solvintech",
+										"ru"
+									],
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sergey"
+										},
+										{
+											"key": "email",
+											"value": "nazarkin2017@mail.ru"
+										},
+										{
+											"key": "surname",
+											"value": "nazar"
+										},
+										{
+											"key": "birthdate",
+											"value": "1998-12-07"
+										},
+										{
+											"key": "sex",
+											"value": "male"
+										},
+										{
+											"key": "agreement_personal",
+											"value": "1"
+										},
+										{
+											"key": "agreement_communication",
+											"value": "1"
+										},
+										{
+											"key": "agreement_loyalty",
+											"value": "1"
+										},
+										{
+											"key": "phone",
+											"value": "+7(977)594-72-13"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Agent profile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.tashir.solvintech.ru/api/register?name=sergey&email=nazarkin2017@mail.ru&surname=nazar&birthdate=1998-12-07&sex=male&agreement_personal=1&agreement_communication=1&agreement_loyalty=1&phone=+7(977)594-72-13",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tashir",
+										"solvintech",
+										"ru"
+									],
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sergey"
+										},
+										{
+											"key": "email",
+											"value": "nazarkin2017@mail.ru"
+										},
+										{
+											"key": "surname",
+											"value": "nazar"
+										},
+										{
+											"key": "birthdate",
+											"value": "1998-12-07"
+										},
+										{
+											"key": "sex",
+											"value": "male"
+										},
+										{
+											"key": "agreement_personal",
+											"value": "1"
+										},
+										{
+											"key": "agreement_communication",
+											"value": "1"
+										},
+										{
+											"key": "agreement_loyalty",
+											"value": "1"
+										},
+										{
+											"key": "phone",
+											"value": "+7(977)594-72-13"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Agent profile logout",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.tashir.solvintech.ru/api/register?name=sergey&email=nazarkin2017@mail.ru&surname=nazar&birthdate=1998-12-07&sex=male&agreement_personal=1&agreement_communication=1&agreement_loyalty=1&phone=+7(977)594-72-13",
+									"protocol": "https",
+									"host": [
+										"api",
+										"tashir",
+										"solvintech",
+										"ru"
+									],
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sergey"
+										},
+										{
+											"key": "email",
+											"value": "nazarkin2017@mail.ru"
+										},
+										{
+											"key": "surname",
+											"value": "nazar"
+										},
+										{
+											"key": "birthdate",
+											"value": "1998-12-07"
+										},
+										{
+											"key": "sex",
+											"value": "male"
+										},
+										{
+											"key": "agreement_personal",
+											"value": "1"
+										},
+										{
+											"key": "agreement_communication",
+											"value": "1"
+										},
+										{
+											"key": "agreement_loyalty",
+											"value": "1"
+										},
+										{
+											"key": "phone",
+											"value": "+7(977)594-72-13"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth:sanctum",
+			"item": [
+				{
+					"name": "Lk",
+					"item": [
+						{
+							"name": "UserCRUD",
+							"item": [
+								{
+									"name": "UserInfo",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "6|7Rd9jnc705LNtLEngcvQAVJpcpG74j8cwD8BZndn",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/api/lk/user",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"lk",
+												"user"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "UpdateUser",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "6|7Rd9jnc705LNtLEngcvQAVJpcpG74j8cwD8BZndn",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/api/lk/user/update?name=Maxim&surname=Lopens&email=sobaka@sobaka.ru",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"lk",
+												"user",
+												"update"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "Maxim"
+												},
+												{
+													"key": "surname",
+													"value": "Lopens"
+												},
+												{
+													"key": "email",
+													"value": "sobaka@sobaka.ru"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "2",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": ""
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Bonuses",
+							"item": [
+								{
+									"name": "History",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "6|7Rd9jnc705LNtLEngcvQAVJpcpG74j8cwD8BZndn",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/api/lk/bonuses/history",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"lk",
+												"bonuses",
+												"history"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Checks",
+							"item": [
+								{
+									"name": "ShowCheckes",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "6|7Rd9jnc705LNtLEngcvQAVJpcpG74j8cwD8BZndn",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/api/lk/checkes/show",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"lk",
+												"checkes",
+												"show"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "UploadCheck",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/api/lk/checkes/upload?bonus_id=1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"lk",
+												"checkes",
+												"upload"
+											],
+											"query": [
+												{
+													"key": "bonus_id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
